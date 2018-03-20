@@ -32,17 +32,23 @@ creeperheart.setRarity("RARE");
 creeperheart.setCreativeTab("<creativetab:misc>");
 creeperheart.register();
 
-//zombie brain
-var zombiebrain = VanillaFactory.createItem("zombie_brain");
-zombiebrain.setMaxStackSize(64);
+//zombie brain - can be eaten
+var zombiebrain = VanillaFactory.createItemFood("zombie_brain",6);
+zombiebrain.setMaxStackSize(16);
 zombiebrain.setRarity("RARE");
 zombiebrain.setCreativeTab("<creativetab:misc>");
+zombiebrain.setSaturation(1.3);
+zombiebrain.setItemUseAction("EAT");
+zombiebrain.itemRightClick = function(stack, world, player, hand) 
+{
+  return "SUCCESS";
+};
 zombiebrain.register();
 
 //witch hand
 var witchhand = VanillaFactory.createItem("witch_hand");
 witchhand.setMaxStackSize(16);
-witchhand.setRarity("RARE");
+witchhand.setRarity("EPIC");
 witchhand.setCreativeTab("<creativetab:misc>");
 witchhand.register();
 
