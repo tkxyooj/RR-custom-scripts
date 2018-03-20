@@ -39,10 +39,6 @@ zombiebrain.setRarity("RARE");
 zombiebrain.setCreativeTab("<creativetab:misc>");
 zombiebrain.setSaturation(1.3);
 zombiebrain.setItemUseAction("EAT");
-zombiebrain.itemRightClick = function(stack, world, player, hand) 
-{
-  return "SUCCESS";
-};
 zombiebrain.register();
 
 //witch hand
