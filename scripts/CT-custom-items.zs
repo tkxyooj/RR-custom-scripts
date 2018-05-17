@@ -8,70 +8,35 @@ import mods.contenttweaker.Commands;
 var deadplank = VanillaFactory.createItem("dead_plank");
 deadplank.setMaxStackSize(64);
 deadplank.setRarity("COMMON");
-deadplank.setCreativeTab("<creativetab:misc>");
+deadplank.setCreativeTab(<creativetab:misc>);
 deadplank.register();
 
-//wood ash
-var woodash = VanillaFactory.createItem("wood_ash");
-woodash.setMaxStackSize(64);
-woodash.setRarity("UNCOMMON");
-woodash.setCreativeTab("<creativetab:misc>");
-woodash.register();
+//infusion crystal tier 1
+var ift1 = VanillaFactory.createItem("alpha_infusion");
+ift1.setMaxStackSize(1);
+ift1.setRarity("COMMON");
+ift1.register();
 
-//mutagen
-var mutagen = VanillaFactory.createItem("mutagen");
-mutagen.setMaxStackSize(64);
-mutagen.setRarity("UNCOMMON");
-mutagen.setCreativeTab("<creativetab:misc>");
-mutagen.register();
+//infusion crystal tier 2
+var ift2 = VanillaFactory.createItem("gamma_infusion");
+ift2.setMaxStackSize(1);
+ift2.setRarity("COMMON");
+ift2.register();
 
-//creeper heart
-var creeperheart = VanillaFactory.createItem("creeper_heart");
-creeperheart.setMaxStackSize(64);
-creeperheart.setRarity("RARE");
-creeperheart.setCreativeTab("<creativetab:misc>");
-creeperheart.register();
+//infusion crystal tier 3
+var ift3 = VanillaFactory.createItem("kappa_infusion");
+ift3.setMaxStackSize(1);
+ift3.setRarity("COMMON");
+ift3.register();
 
-//zombie brain - can be eaten
-var zombiebrain = VanillaFactory.createItemFood("zombie_brain",6);
-zombiebrain.setMaxStackSize(16);
-zombiebrain.setRarity("RARE");
-zombiebrain.setCreativeTab("<creativetab:misc>");
-zombiebrain.setSaturation(1.3);
-zombiebrain.setItemUseAction("EAT");
-zombiebrain.register();
+//infusion crystal tier 4
+var ift4 = VanillaFactory.createItem("omega_infusion");
+ift4.setMaxStackSize(1);
+ift4.setRarity("COMMON");
+ift4.register();
 
-//witch hand
-var witchhand = VanillaFactory.createItem("witch_hand");
-witchhand.setMaxStackSize(16);
-witchhand.setRarity("EPIC");
-witchhand.setCreativeTab("<creativetab:misc>");
-witchhand.register();
-
-//dog tongue
-var dogtongue = VanillaFactory.createItem("dog_tongue");
-dogtongue.setMaxStackSize(32);
-dogtongue.setRarity("RARE");
-dogtongue.setCreativeTab("<creativetab:misc>");
-dogtongue.register();
-
-//bat fang
-var batfang = VanillaFactory.createItem("bat_fang");
-batfang.setMaxStackSize(16);
-batfang.setRarity("RARE");
-batfang.setCreativeTab("<creativetab:misc>");
-batfang.register();
-
-//rotten hairball
-var rottenhairball = VanillaFactory.createItem("rotten_hairball");
-rottenhairball.setMaxStackSize(16);
-rottenhairball.setRarity("RARE");
-rottenhairball.setCreativeTab("<creativetab:misc>");
-rottenhairball.register();
-
-//cordovan (horse hide)
-var cordovan = VanillaFactory.createItem("horse_hide");
-cordovan.setMaxStackSize(16);
-cordovan.setRarity("RARE");
-cordovan.setCreativeTab("<creativetab:misc>");
-cordovan.register();
+//infusion crystal tier 5
+var ift5 = VanillaFactory.createItem("master_infusion");
+ift5.setMaxStackSize(1);
+ift5.setRarity("COMMON");
+ift5.register();
